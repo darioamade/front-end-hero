@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/sxa1gmw.css");
 @import url("https://use.typekit.net/sxa1gmw.css");
-@import url('https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css');
+@import url("https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css");
 :root {
   --section-rotate: 9vw;
 }
@@ -37,6 +37,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: rgb(75, 74, 74);
+  position: relative;
 }
 
 .header {
@@ -68,7 +69,7 @@ body {
   border-radius: 50%;
   width: 60px;
   height: 60px !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.399);
   display: block;
   overflow: hidden;
   @media (max-width: 768px) {
@@ -140,6 +141,7 @@ h2 {
   width: 100%;
   color: #38464d;
 }
+
 /* ----------------------------HERO-SECTION------------------------------------*/
 .hero {
   background: #ff6400;
@@ -178,15 +180,23 @@ h2 {
   margin-right: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #999999;
+  color: #088dba;
   font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    margin: 2rem 0;
+  }
   &:hover {
     color: #ff00a5;
   }
 }
-
+#colorGrey {
+  color: #888;
+  &:hover {
+    color: #ff00a5;
+  }
+}
 a {
   list-style: none;
   text-decoration: none;
@@ -300,7 +310,7 @@ a {
   left: 0%;
   width: 50%;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   border-right: 1px solid rgb(255, 251, 251);
   transition: all 0.5s;
   z-index: 8000;
@@ -324,11 +334,11 @@ a {
 }
 
 .nav1 ul li a {
-  color: #fff;
+  color: rgb(43, 43, 43);
   text-decoration: none;
   font-family: inherit;
   font-size: 4.8rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-weight: 600;
   font-family: "Roboto";
   letter-spacing: 2px;
@@ -351,7 +361,7 @@ a {
   display: flex;
   width: 20px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #070707;
 }
 
 .menu-close :nth-child(1) {
@@ -385,17 +395,40 @@ a {
     font-size: 2.8rem;
   }
 }
-
+.logo-hum {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 3rem;
+  height: 3rem;
+}
 /************** SECTION TOOLS******************/
 
-.tools,
-.tools-c {
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6,
+.container-7,
+.container-8 {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.container-2,
+.container-4,
+.container-6,
+.container-8 {
+  background-color: #f9fafad2;
+}
+
+.tools {
   max-width: 144rem;
   width: 100%;
   margin: 0 auto;
   padding: 4rem 2rem;
-  border: 1px solid #ddd;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   &-title {
@@ -404,7 +437,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #ddd;
+
     padding: 4rem 0;
   }
   &-box {
@@ -414,7 +447,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #ddd;
+
     &-content {
       width: 35rem;
       height: 25rem;
@@ -439,6 +472,136 @@ a {
   margin-right: 0;
 }
 
-.tools-c {
-  background-color: #F9FAFA;
+/*********************** FOOTER************************************/
+.footer {
+  max-width: 1695px;
+  margin: 0 auto;
+  padding: 10vh 5vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.logo-1 {
+  width: 6rem;
+  height: 6rem;
+  margin: 4rem;
+  @media (max-width: 768px) {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+  }
+}
+
+/*********************** FOOTER************************************/
+.float-nav {
+  position: fixed;
+  height: 25rem;
+  width: 6rem;
+  background-color: #ff00a600;
+  top: 55%;
+  right: 0%;
+  transform: translate(0%, 0%);
+  z-index: 5001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &:hover {
+    background-color: #ff00a630;
+  }
+  @media (max-width: 768px) {
+    width: 25rem;
+    height: 6rem;
+    flex-direction: row;
+    top: 92%;
+    right: 50%;
+    transform: translate(50%, 0%);
+    background-color: #ff00a600;
+    display: none;
+    &:hover {
+      background-color: #ff00a600;
+    }
+  }
+}
+
+.search__icon-float,
+.search__icon-float1 {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+  fill: #ff00a5;
+  cursor: pointer;
+  &:hover {
+    fill: #fff;
+  }
+  @media (max-width: 768px) {
+    fill: rgb(52, 51, 51);
+    &:hover {
+      fill: #ff00a5;
+    }
+  }
+}
+
+.search__icon-float1 {
+  @media (max-width: 768px) {
+    fill: rgb(238, 5, 5);
+    &:hover {
+      fill: #ff00a5;
+    }
+  }
+}
+
+.float-nav1 {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.search-icon-search-4 {
+  width: 4rem;
+  height: 3rem;
+
+  fill: rgb(52, 51, 51);
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  &:hover {
+    fill: #ff00a5;
+  }
+}
+
+.btn-search {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translate(25%, 0%);
+  z-index: 300;
+}
+
+@keyframes anim {
+  0% {
+    fill: #ff6400;
+  }
+  25% {
+    fill: #ff00a5;
+  }
+  50% {
+    fill: #ff6400;
+  }
+  100% {
+    fill: #ff00a5;
+  }
 }

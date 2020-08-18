@@ -44,7 +44,24 @@
     </script>
   </head>
   <body>
-    <header class="header">
+    <div class="float-nav">
+        <svg class="search__icon-float" onClick="location.href='https://twitter.com/darioamade'" >
+            <use xlink:href="css/img/sprite.svg#icon-twitter"></use>
+        </svg>
+        <svg class="search__icon-float" >
+            <use xlink:href="css/img/sprite.svg#icon-linkedin"></use>
+        </svg>
+        <svg class="search__icon-float1" target="_blank"  onClick="location.href='https://www.youtube.com/channel/UCHNiz5ljfYgQQUiJGOm63Sg?view_as=subscriber'" >
+            <use xlink:href="css/img/sprite.svg#icon-youtube1" ></use>
+        </svg>
+        <svg class="search__icon-float" onClick="location.href='mailto:dario_isd@outlook.com'" >
+            <use xlink:href="css/img/sprite.svg#icon-envelope"></use>
+        </svg>
+        <svg class="search__icon-float" onClick="location.href='https://www.instagram.com/darioamade/'" >
+            <use xlink:href="css/img/sprite.svg#icon-instagram"></use>
+        </svg>
+    </div>
+    <header class="header" id=features>
       <div class="header-top">
         <div class="menu">
           <div class="menu-open">
@@ -62,13 +79,14 @@
               <li><a href="#">HTML</a></li>
               <li><a href="#">Javascript</a></li>
             </ul>
+            <img src="/css/img/logo5.png" alt="frontend image" class="logo-hum" />
           </nav>
         </div>
         <img src="/css/img/logo5.png" alt="frontend image" class="logo" />
         <ul class="nav">
-          <a href=""><li class="nav-links-item-1">html</li></a>
-          <a href=""><li class="nav-links-item-1">Css</li></a>
-          <a href=""><li class="nav-links-item-1">Javascript</li></a>
+          <a href=""><li class="nav-links-item-1" id="colorGrey">html</li></a>
+          <a href=""><li class="nav-links-item-1" id="colorGrey">Css</li></a>
+          <a href=""><li class="nav-links-item-1" id="colorGrey">Javascript</li></a>
         </ul>
         <img src="/css/img/about.jpg" alt="image of me on" class="myImg" />
       </div>
@@ -94,562 +112,638 @@
           <h1>Front End Developer</h1>
         </div>
       </section>
-      <section class="article"></section>
+     
       <!-- END OF SECTION HERO -->
-      <section class="tools">
-        <div class="tools-title">
-          <h2>Free Developer tools</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-visualstudiocode"></use>
-            </svg>
-            <a href="https://code.visualstudio.com/download" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">VS Code</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! Full customization with dark
-              mode, folder and icons.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-genius"></use>
-            </svg>
-            <a href="https://atom.io/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ATOM</li></a
-            >
-            <p class="regular-text">
-              Free and open source text editor, Likewise VS Code Atom is very
-              good code editor and comes has my second choice and is absolutely
-              brilliant!
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-xcode"></use>
-            </svg>
-            <a
-              href="https://apps.apple.com/gb/app/xcode/id497799835?mt=12"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">XCODE</li></a
-            >
-            <p class="regular-text">
-              If you are Mac user then this if software editor is great and
-              powerful tool to build your first app. Nice and easy to get
-              started with it.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-codepen2"></use>
-            </svg>
-            <a href="https://codepen.io/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
-            >
-            <p class="regular-text">
-              An online code editor, learning environment, and community for
-              front-end web dev. using HTML, CSS and JavaScript code snippets,
-              projects, and web ...
-            </p>
-          </div>
+    <div class="container-1">
+        <section class="tools">
+            <div class="tools-title">
+            <h2>Free Developer tools</h2>
+            </div>
+            <div class="tools-box">
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-visualstudiocode"></use>
+                </svg>
+                <a href="https://code.visualstudio.com/download" target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">VS Code</li></a
+                >
+                <p class="regular-text">
+                I have been using VS Code for a good year now as my code editor of
+                choice and I absolutely love it! Full customization with dark
+                mode, folder and icons.
+                </p>
+            </div>
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-genius"></use>
+                </svg>
+                <a href="https://atom.io/" target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">ATOM</li></a
+                >
+                <p class="regular-text">
+                Free and open source text editor, Likewise VS Code Atom is very
+                good code editor and comes has my second choice and is absolutely
+                brilliant!
+                </p>
+            </div>
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-xcode"></use>
+                </svg>
+                <a
+                href="https://apps.apple.com/gb/app/xcode/id497799835?mt=12"
+                target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">XCODE</li></a
+                >
+                <p class="regular-text">
+                If you are Mac user then this if software editor is great and
+                powerful tool to build your first app. Nice and easy to get
+                started with it.
+                </p>
+            </div>
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-codepen2"></use>
+                </svg>
+                <a href="https://codepen.io/" target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
+                >
+                <p class="regular-text">
+                An online code editor, learning environment, and community for
+                front-end web dev. using HTML, CSS and JavaScript code snippets,
+                projects, and web ...
+                </p>
+            </div>
 
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-github"></use>
-            </svg>
-            <a href="https://github.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">Git</li></a
-            >
-            <p class="regular-text">
-              Git is a free and open source distributed version control system
-              designed to handle everything from small to very large projects
-              with speed and efficiency.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-image"></use>
-            </svg>
-            <a href="https://tinyjpg.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">TINYJPG</li></a
-            >
-            <p class="regular-text">
-              Images by far are the more large files in any website page.
-              TinyJPG reduces the file size of your JPEG images and analyzed to
-              best possible JPEG encoding.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="tools-c">
-        <div class="tools-title">
-          <h2>HTML5 RESOURCES</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-visualstudiocode"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">VS Code</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-genius"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">ATOM</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-xcode"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">XCODE</li></a
-            >
-            <p class="regular-text">
-              If you are Mac user then this if software editor is great a
-              powerful tools to build your first app. Nice and easy to get
-              started with it.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-codepen2"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>FREE DESIGN RESOURCES</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-adobexd"></use>
-            </svg>
-            <a
-              href="https://helpx.adobe.com/uk/search.html?q=xd"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ADOBEXD</li></a
-            >
-            <p class="regular-text">
-              Adobe XD is a vector-based user experience design tool for web
-              apps and mobile apps, developed and published by Adobe Inc.
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-figma"></use>
-            </svg>
-            <a href="https://www.figma.com/downloads/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">FIGMA</li></a
-            >
-            <p class="regular-text">
-              Likewise AdobeXd Figma its free app to create you designs, vectors
-              and logo on a fly.I used on my daily basis and easy to learn .
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-brush"></use>
-            </svg>
-            <a
-              href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
-            >
-            <p class="regular-text">
-              If you are looking for color for your next design, colors.co is
-              the place to go. simple user interface allowing you to choose
-              color matching easily.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>FONTS AND TYPOGRAPHY TOOLS</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-adobexd"></use>
-            </svg>
-            <a
-              href="https://helpx.adobe.com/uk/search.html?q=xd"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ADOBEXD</li></a
-            >
-            <p class="regular-text">
-              Adobe XD is a vector-based user experience design tool for web
-              apps and mobile apps, developed and published by Adobe Inc.
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-figma"></use>
-            </svg>
-            <a href="https://www.figma.com/downloads/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">FIGMA</li></a
-            >
-            <p class="regular-text">
-              Likewise AdobeXd Figma its free app to create you designs, vectors
-              and logo on a fly.I used on my daily basis and easy to learn .
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-brush"></use>
-            </svg>
-            <a
-              href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
-            >
-            <p class="regular-text">
-              If you are looking for color for your next design, colors.co is
-              the place to go. simple user interface allowing you to choose
-              color matching easily.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>COLORS AND TOOLS</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-adobe"></use>
-            </svg>
-            <a
-              href="https://color.adobe.com/trends"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ADOBE-COLORS</li></a
-            >
-            <p class="regular-text">
-                My go to when comes to pick a color for match my designs.
-                Discover current color trends in different industries from the creative communities.
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-github"></use>
+                </svg>
+                <a href="https://github.com/" target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">Git</li></a
+                >
+                <p class="regular-text">
+                Git is a free and open source distributed version control system
+                designed to handle everything from small to very large projects
+                with speed and efficiency.
+                </p>
+            </div>
+            <div class="tools-box-content">
+                <svg class="search__icon">
+                <use xlink:href="css/img/sprite.svg#icon-image"></use>
+                </svg>
+                <a href="https://tinyjpg.com/" target="_blank"
+                ><li class="nav-links-item-1" id="marginZero">TINYJPG</li></a
+                >
+                <p class="regular-text">
+                Images by far are the more large files in any website page.
+                TinyJPG reduces the file size of your JPEG images and analyzed to
+                best possible JPEG encoding.
+                </p>
+            </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-2">
+        <section class="tools">
+            <div class="tools-title">
+              <h2>HTML5 RESOURCES</h2>
+            </div>
+            <div class="tools-box">
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-visualstudiocode"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">VS Code</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-genius"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">ATOM</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-xcode"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">XCODE</li></a
+                >
+                <p class="regular-text">
+                  If you are Mac user then this if software editor is great a
+                  powerful tools to build your first app. Nice and easy to get
+                  started with it.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-codepen2"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
         
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-figma"></use>
-            </svg>
-            <a href="https://webgradients.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ITMEO</li></a
-            >
-            <p class="regular-text">
-                Free collection of linear gradients that you can use as
-                content backdrops in any part of your website. Easy copy CSS3 crossbrowser code
-                & use it in a moment!
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-brush"></use>
-            </svg>
-            <a
-              href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
-            >
-            <p class="regular-text">
-              If you are looking for color for your next design, colors.co is
-              the place to go. simple user interface allowing you to choose
-              color matching easily.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
-            </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+    <div class="container-3">
+        <section class="tools">
+            <div class="tools-title">
+              <h2>FREE DESIGN RESOURCES</h2>
+            </div>
+            <div class="tools-box">
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-adobexd"></use>
+                </svg>
+                <a
+                  href="https://helpx.adobe.com/uk/search.html?q=xd"
+                  target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">ADOBEXD</li></a
+                >
+                <p class="regular-text">
+                  Adobe XD is a vector-based user experience design tool for web
+                  apps and mobile apps, developed and published by Adobe Inc.
+               
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-figma"></use>
+                </svg>
+                <a href="https://www.figma.com/downloads/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">FIGMA</li></a
+                >
+                <p class="regular-text">
+                  Likewise AdobeXd Figma its free app to create you designs, vectors
+                  and logo on a fly.I used on my daily basis and easy to learn .
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-brush"></use>
+                </svg>
+                <a
+                  href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
+                  target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
+                >
+                <p class="regular-text">
+                  If you are looking for color for your next design, colors.co is
+                  the place to go. simple user interface allowing you to choose
+                  color matching easily.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+        
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+    <div class="container-4">
+        <section class="tools">
+            <div class="tools-title">
+              <h2>FONTS AND TYPOGRAPHY TOOLS</h2>
+            </div>
+            <div class="tools-box">
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-google"></use>
+                </svg>
+                <a
+                  href="https://fonts.google.com/"
+                  target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">GOOGLE FONTS</li></a
+                >
+                <p class="regular-text">
+                    Making the web more beautiful, fast, and open through great typography.
+                    This was my first typography web page I ever used and till now.
+                  <!-- It is available for macOS and Windows. Great tool to start creating 
+                      your prototypes for your next potential client. -->
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-adobe"></use>
+                </svg>
+                <a href="https://www.figma.com/downloads/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">ADOBE FONTS</li></a
+                >
+                <p class="regular-text">
+                    Adobe Fonts partners with the world's leading type foundries to bring thousands of 
+                    beautiful fonts to designers every day. No need to worry about licensing.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-brush"></use>
+                </svg>
+                <a
+                  href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
+                  target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
+                >
+                <p class="regular-text">
+                  If you are looking for color for your next design, colors.co is
+                  the place to go. simple user interface allowing you to choose
+                  color matching easily.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+        
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+                </svg>
+                <a href=""
+                  ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
+                >
+                <p class="regular-text">
+                  I have been using VS Code for a good year now as my code editor of
+                  choice and I absolutely love it! See the next resource for my
+                  setup.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+    <div class="container-5">
+         
+  <section class="tools">
+    <div class="tools-title">
+      <h2>COLORS AND TOOLS</h2>
+    </div>
+    <div class="tools-box">
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-adobe"></use>
+        </svg>
+        <a href="https://color.adobe.com/trends" target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">ADOBE-COLORS</li></a
+        >
+        <p class="regular-text">
+          My go to when comes to pick a color for match my designs. Discover
+          current color trends in different industries from the creative
+          communities.
 
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+          <!-- It is available for macOS and Windows. Great tool to start creating 
+              your prototypes for your next potential client. -->
+        </p>
+      </div>
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-discover"></use>
+        </svg>
+        <a href="https://webgradients.com/" target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">ITMEO</li></a
+        >
+        <p class="regular-text">
+          Free collection of linear gradients that you can use as content
+          backdrops in any part of your website. Easy copy CSS3 crossbrowser
+          code & use it in a moment!
+        </p>
+      </div>
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-brush"></use>
+        </svg>
+        <a
+          href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
+          target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">COLORS</li></a
+        >
+        <p class="regular-text">
+          If you are looking for color for your next design, colors.co is
+          the place to go. simple user interface allowing you to choose
+          color matching easily.
+        </p>
+      </div>
+     <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-openstreetmap"></use>
+        </svg>
+        <a href=""
+          ><li class="nav-links-item-1" id="marginZero">CODEPEN</li></a
+        >
+        <p class="regular-text">
+          I have been using VS Code for a good year now as my code editor of
+          choice and I absolutely love it! See the next resource for my
+          setup.
+        </p>
+      </div>
+
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+        </svg>
+        <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
+        <p class="regular-text">
+          I have been using VS Code for a good year now as my code editor of
+          choice and I absolutely love it! See the next resource for my
+          setup.
+        </p>
+      </div>
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+        </svg>
+        <a href=""
+          ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
+        >
+        <p class="regular-text">
+          I have been using VS Code for a good year now as my code editor of
+          choice and I absolutely love it! See the next resource for my
+          setup.
+        </p>
+      </div> 
+    </div>
+  </section>
+    </div>
+    <div class="container-6">
+        <section class="tools">
+            <div class="tools-title">
+              <h2>IMAGES AND VIDEOS</h2>
+            </div>
+            <div class="tools-box">
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-discover"></use>
+                </svg>
+                <a href="https://www.pexels.com/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">PEXELS</li></a
+                >
+                <p class="regular-text">
+                  Great resource for free royalty photos and videos. The best free
+                  stock photos & videos shared by talented creators.
+                  <!-- It is available for macOS and Windows. Great tool to start creating 
+                      your prototypes for your next potential client. -->
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-unsplash"></use>
+                </svg>
+                <a href="https://www.figma.com/downloads/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">UNSPLASH</li></a
+                >
+                <p class="regular-text">
+                  Great resource for free stock photos.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-brush"></use>
+                </svg>
+                <a
+                  href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
+                  target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">COVERR</li></a
+                >
+                <p class="regular-text">
+                  If you are looking for free stocks footage for your next project
+                  COVERR is the place to go for the Beautiful Free Stock Video
+                  Footage.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+    <div class="container-7">
+        <section class="tools">
+            <div class="tools-title">
+              <h2>BEST ICONS AND TOOLS</h2>
+            </div>
+            <div class="tools-box">
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-IcoMoon"></use>
+                </svg>
+                <a href="https://icomoon.io/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">ICOMOON</li></a
+                >
+                <p class="regular-text">
+                  My# 1 choice for free icons although some of them a paid but still
+                  found most tons are free and resizable to your needs.
+                  <!-- It is available for macOS and Windows. Great tool to start creating 
+                      your prototypes for your next potential client. -->
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-fa"></use>
+                </svg>
+                <a href="https://fontawesome.com/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">FONTAWESOME</li></a
+                >
+                <p class="regular-text">
+                  Get vector icons and social logos on your website with Font
+                  Awesome, the web's most popular icon set and toolkit.
+                </p>
+              </div>
+              <div class="tools-box-content">
+                <svg class="search__icon">
+                  <use xlink:href="css/img/sprite.svg#icon-discover"></use>
+                </svg>
+                <a href="https://favicon.io/favicon-generator/" target="_blank"
+                  ><li class="nav-links-item-1" id="marginZero">FAVICON</li></a
+                >
+                <p class="regular-text">
+                  Quickly generate your favicon from text by selecting the text,
+                  fonts, and colors. Download your favicon in the most up to date
+                  formats.
+                </p>
+              </div>
+            </div>
+          </section>
+    </div>
+    <div class="container-8">
+
+  <section class="tools">
+    <div class="tools-title">
+      <h2>INSPIRATION DESIGN</h2>
+    </div>
+    <div class="tools-box">
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-behance"></use>
+        </svg>
+        <a href="https://www.behance.net/" target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">BEHENCE</li></a
+        >
+        <p class="regular-text">
+          Run out of idea for your next project? Get inspired by hundreds of
+          creators all over the world using behance and create your own
+          project to inspiring others.
+          <!-- It is available for macOS and Windows. Great tool to start creating 
+              your prototypes for your next potential client. -->
+        </p>
+      </div>
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-dribbble"></use>
+        </svg>
+        <a href="https://dribbble.com/" target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">Dribbble</li></a
+        >
+        <p class="regular-text">
+          Discover the world’s top designers & creatives. Dribbble is the
+          leading destination to find & showcase creative work and home to
+          the world's best design.
+        </p>
+      </div>
+      <div class="tools-box-content">
+        <svg class="search__icon">
+          <use xlink:href="css/img/sprite.svg#icon-pinterest"></use>
+        </svg>
+        <a href="https://dribbble.com/" target="_blank"
+          ><li class="nav-links-item-1" id="marginZero">pinterest</li></a
+        >
+        <p class="regular-text">
+          Discover  top designers & creatives with pinterest is the
+          leading destination to find & showcase creative work and home to
+          the world's best design.
+        </p>
+      </div>
+    </div>
+  </section>
+    </div>
+
+      <footer class="footer">
+        <a href="#features">
+            <span class="btn-search" id=features>
+            <svg class="search-icon-search-4">
+              <use xlink:href="./css/img/sprite.svg#icon-chevron-up"></use>
             </svg>
-            <a href=""><li class="nav-links-item-1" id="marginZero">Git</li></a>
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-code-fork"></use>
+        </span>
+        </a>
+        <img src="/css/img/logo5.png" alt="frontend image" class="logo-1" />
+        <p class="regular-text">
+        © 2020 by Dario Amade. All rights reserved.
+                        <br>
+         No responsibility for the content of linked third-party websites.
+        </p>
+        <div class="float-nav1">
+            <svg class="search__icon-float" onClick="location.href='https://twitter.com/darioamade'" >
+                <use xlink:href="css/img/sprite.svg#icon-twitter"></use>
             </svg>
-            <a href=""
-              ><li class="nav-links-item-1" id="marginZero">Javascript</li></a
-            >
-            <p class="regular-text">
-              I have been using VS Code for a good year now as my code editor of
-              choice and I absolutely love it! See the next resource for my
-              setup.
-            </p>
-          </div>
+            <svg class="search__icon-float">
+                <use xlink:href="css/img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            <svg class="search__icon-float1" target="_blank"  onClick="location.href='https://www.youtube.com/channel/UCHNiz5ljfYgQQUiJGOm63Sg?view_as=subscriber'" >
+                <use xlink:href="css/img/sprite.svg#icon-youtube1" ></use>
+            </svg>
+            <svg class="search__icon-float" onClick="location.href='mailto:dario_isd@outlook.com'" >
+                <use xlink:href="css/img/sprite.svg#icon-envelope"></use>
+            </svg>
+            <svg class="search__icon-float" onClick="location.href='https://www.instagram.com/darioamade/'" >
+                <use xlink:href="css/img/sprite.svg#icon-instagram"></use>
+            </svg>
         </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>IMAGES AND VIDEOS</h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-adobexd"></use>
-            </svg>
-            <a href="https://www.pexels.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">PEXELS</li></a
-            >
-            <p class="regular-text">
-              Great resource for free royalty photos and videos. The best free
-              stock photos & videos shared by talented creators.
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-unsplash"></use>
-            </svg>
-            <a href="https://www.figma.com/downloads/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">UNSPLASH</li></a
-            >
-            <p class="regular-text">
-              Great resource for free stock photos.
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-brush"></use>
-            </svg>
-            <a
-              href="https://coolors.co/094074-3c6997-5adbff-ffdd4a-fe9000"
-              target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">COVERR</li></a
-            >
-            <p class="regular-text">
-              If you are looking for free stocks footage for your next project
-              COVERR is the place to go for the Beautiful Free Stock Video
-              Footage.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>BEST ICONS AND TOOLS </h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-adobexd"></use>
-            </svg>
-            <a href="https://icomoon.io/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">ICOMOON</li></a
-            >
-            <p class="regular-text">
-              My# 1 choice for free icons although some of them a paid but still found most 
-              tons are free and resizable to your needs.
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-figma"></use>
-            </svg>
-            <a href="https://fontawesome.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">FONTAWESOME</li></a
-            >
-            <p class="regular-text">
-                Get vector icons and social logos on your website with Font Awesome, 
-                the web's most popular icon set and toolkit.
-            </p>
-          </div>
-        
-        </div>
-      </section>
-      <section class="tools">
-        <div class="tools-title">
-          <h2>INSPIRATION DESIGN </h2>
-        </div>
-        <div class="tools-box">
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-behance"></use>
-            </svg>
-            <a href="https://www.behance.net/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">BEHENCE</li></a
-            >
-            <p class="regular-text">
-              Run out of idea for your next project? Get inspired by  hundreds of creators
-              all over the world using behance and create your own project to inspiring others.
-              <!-- It is available for macOS and Windows. Great tool to start creating 
-                  your prototypes for your next potential client. -->
-            </p>
-          </div>
-          <div class="tools-box-content">
-            <svg class="search__icon">
-              <use xlink:href="css/img/sprite.svg#icon-figma"></use>
-            </svg>
-            <a href="https://dribbble.com/" target="_blank"
-              ><li class="nav-links-item-1" id="marginZero">Dribbble</li></a
-            >
-            <p class="regular-text">
-                Discover the world’s top designers & creatives.
-                Dribbble is the leading destination to find & showcase creative work 
-                and home to the world's best design.
-            </p>
-          </div>
-        
-        </div>
-      </section>
+      </footer>
+ 
+     
     </main>
     <script src="/js/app.js"></script>
   </body>

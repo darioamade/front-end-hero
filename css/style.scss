@@ -1,70 +1,8 @@
 @import './base/base';
-@import url("https://use.typekit.net/sxa1gmw.css");
-@import url("https://use.typekit.net/sxa1gmw.css");
-@import url("https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css");
-:root {
-  --section-rotate: 9vw;
-}
+@import './base/header';
 
-::-moz-selection {
-  background-color: #55c57a;
-  color: #fff;
-}
 
-::selection {
-  background-color: #55c57a;
-  color: #fff;
-}
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ffffff;
-  line-height: 1.6;
-  font-family: novel-sans-pro, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: rgb(75, 74, 74);
-  position: relative;
-}
-
-.header {
-  max-width: 1695px;
-  margin: 0 auto;
-  padding: 2rem 2rem;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  &-top {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-  }
-  &-down {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 .myImg {
   border-radius: 50%;

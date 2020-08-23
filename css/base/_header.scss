@@ -22,3 +22,28 @@
     align-items: center;
   }
 }
+
+.myImg {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.399);
+  display: block;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  // margin: 16px 10px;
+  // -webkit-filter: grayscale(100%);
+  // filter: grayscale(100%);
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -1rem;
+  }
+}

@@ -500,7 +500,9 @@ a {
 .container-5,
 .container-6,
 .container-7,
-.container-8 {
+.container-8,
+.container-9,
+.container-10 {
   width: 100vw;
   margin: 0 auto;
   background-color: #ffffff;
@@ -509,7 +511,7 @@ a {
 .container-2,
 .container-4,
 .container-6,
-.container-8 {
+.container-10 {
   background-color: #f9fafad2;
 }
 
